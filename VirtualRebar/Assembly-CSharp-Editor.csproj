@@ -331,6 +331,12 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
+    <Reference Include="DatabaseControl">
+      <HintPath>D:/Users/Kevin/GitHub/VirtualRebar/VirtualRebar/Assets/Database Control Free/Scripts/DatabaseControl.dll</HintPath>
+    </Reference>
+    <Reference Include="DatabaseControlEditor">
+      <HintPath>D:/Users/Kevin/GitHub/VirtualRebar/VirtualRebar/Assets/Database Control Free/Scripts/Editor/DatabaseControlEditor.dll</HintPath>
+    </Reference>
     <Reference Include="Photon3Unity3D">
       <HintPath>D:/Users/Kevin/GitHub/VirtualRebar/VirtualRebar/Assets/Photon/PhotonLibs/Photon3Unity3D.dll</HintPath>
     </Reference>
@@ -700,18 +706,6 @@
       <Project>{D6CBD6FE-F187-357A-9631-EAA82248F680}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
-    <ProjectReference Include="Oculus.VR.Editor.csproj">
-      <Project>{AF4FB832-5561-9D71-C8EE-7DF3EB34052A}</Project>
-      <Name>Oculus.VR.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Oculus.VR.Scripts.Editor.csproj">
-      <Project>{EE70ACE7-D10C-5C98-06C4-2F742658B0F3}</Project>
-      <Name>Oculus.VR.Scripts.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Oculus.VR.csproj">
-      <Project>{E72D2BF8-F871-0F05-EC48-2DAF12201138}</Project>
-      <Name>Oculus.VR</Name>
-    </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.csproj">
       <Project>{C0420571-4549-6229-59E7-66A4618332CD}</Project>
       <Name>PhotonUnityNetworking.Utilities.PhotonPlayer.Editor</Name>
@@ -743,6 +737,18 @@
     <ProjectReference Include="PhotonUnityNetworking.csproj">
       <Project>{7EFCF6C0-2D05-BEF4-AAFC-433BEDDAF92C}</Project>
       <Name>PhotonUnityNetworking</Name>
+    </ProjectReference>
+    <ProjectReference Include="Oculus.VR.Editor.csproj">
+      <Project>{AF4FB832-5561-9D71-C8EE-7DF3EB34052A}</Project>
+      <Name>Oculus.VR.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Oculus.VR.Scripts.Editor.csproj">
+      <Project>{EE70ACE7-D10C-5C98-06C4-2F742658B0F3}</Project>
+      <Name>Oculus.VR.Scripts.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Oculus.VR.csproj">
+      <Project>{E72D2BF8-F871-0F05-EC48-2DAF12201138}</Project>
+      <Name>Oculus.VR</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonChat.csproj">
       <Project>{2F2F4AD8-B4FB-6911-B462-2DED90C7CF06}</Project>
