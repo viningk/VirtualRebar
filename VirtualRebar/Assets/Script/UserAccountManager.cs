@@ -16,17 +16,17 @@ public class UserAccountManager : MonoBehaviour
         }
 
         UACInst = this;
-        DontDestroyOnLoad(this);
+        //DontDestroyOnLoad(this);
     }
 
-    //These store the username and password of the player when they have logged in
+    ////These store the username and password of the player when they have logged in
     public static string LoggedIn_Username { get; protected set; }
     private static string LoggedIn_Password = "";
-    //public static string LoggedIn_Data { get; protected set; }
+    ////public static string LoggedIn_Data { get; protected set; }
 
     public static bool IsLoggedIn { get; protected set; }
 
-    public delegate void OnDataReceivedCallBack(string data);
+    //public delegate void OnDataReceivedCallBack(string data);
 
     public void LogIn(string username, string password)
     {

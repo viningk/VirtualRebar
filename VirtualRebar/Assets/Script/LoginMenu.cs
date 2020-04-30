@@ -48,20 +48,23 @@ public class LoginMenu : MonoBehaviour
         playerUsername = Login_UsernameField.text;
         playerPassword = Login_PasswordField.text;
 
-        Debug.Log(playerUsername + " " + playerPassword);
-
         //Check the lengths of the username and password. (If they are wrong, we might as well show an error now instead of waiting for the request to the server)
         if (playerUsername.Length > 3)
         {
             if (playerPassword.Length > 5)
             {
                 //Username and password seem reasonable. Change UI to 'Loading...'. Start the Coroutine which tries to log the player in.
+     
+                
                 loginParent.gameObject.SetActive(false);
-                loadingParent.gameObject.SetActive(true);
+                //loadingParent.gameObject.SetActive(true);
 
                 //StartCoroutine(LoginUser());
 
-
+                ResetAllUIElements();
+                //loadingParent.gameObject.SetActive(false);
+                
+                
                 UserAccountManager.UACInst.LogIn(playerUsername, playerPassword);
 
 

@@ -20,7 +20,7 @@ public class ConnectionHandler : MonoBehaviourPunCallbacks
     // Start is called before the first frame update
     void Start()
     {
-        Connect();
+        //Connect();
     }
 
     // Update is called once per frame
@@ -46,6 +46,7 @@ public class ConnectionHandler : MonoBehaviourPunCallbacks
     public override void OnJoinedRoom()
     {
         Debug.Log("On Room Joined");
+              
         SceneManager.LoadScene("Multiplayer");
     }
 
