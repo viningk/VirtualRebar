@@ -6,12 +6,9 @@ using UnityEngine;
 
 public class NetworkPlayer : MonoBehaviour
 {
-<<<<<<< HEAD
     [SerializeField] Behaviour[] componentsToDisable;
 
-=======
- 
->>>>>>> 19b5dc0994294acfafce7a8b42ff9bb8e66e69b1
+
     private PhotonView view;
 
     private void Awake()
@@ -28,7 +25,6 @@ public class NetworkPlayer : MonoBehaviour
         }
         else
         {
-<<<<<<< HEAD
             OVRCameraRig cameraRig = GetComponentInChildren<OVRCameraRig>();
             cameraRig.enabled = false;
             
@@ -42,18 +38,11 @@ public class NetworkPlayer : MonoBehaviour
             driver.enabled = false;
             
             Camera[] cameras = GetComponentsInChildren<Camera>();
-            foreach (Camera camera in cameras)
+            foreach (Camera camera in cameras) 
             {
                 camera.enabled = false;
             }
-=======
-            //Camera[] cameras = GetComponentsInChildren<Camera>();
 
-            //foreach (Camera camera in cameras)
-            //{
-            //    camera.gameObject.SetActive(false);
-            //}
->>>>>>> 19b5dc0994294acfafce7a8b42ff9bb8e66e69b1
         }
     }
 
