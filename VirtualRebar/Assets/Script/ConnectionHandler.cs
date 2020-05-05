@@ -47,8 +47,10 @@ public class ConnectionHandler : MonoBehaviourPunCallbacks
     public override void OnJoinedRoom()
     {
         Debug.Log("On Room Joined");
-              
-        SceneManager.LoadScene("Multiplayer");
+   
+        PhotonNetwork.LoadLevel("MultiPlayer");     
+      
+        //SceneManager.LoadScene("Multiplayer");
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
