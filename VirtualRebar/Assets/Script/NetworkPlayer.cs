@@ -6,9 +6,7 @@ using UnityEngine;
 
 public class NetworkPlayer : MonoBehaviour
 {
-    [SerializeField]
-    Behaviour[] componentsToDisable;
-
+ 
     private PhotonView view;
     
     private void Awake()
@@ -24,12 +22,12 @@ public class NetworkPlayer : MonoBehaviour
             
         }
         {
-            Camera[] cameras = GetComponentsInChildren<Camera>();
+            //Camera[] cameras = GetComponentsInChildren<Camera>();
 
-            foreach (Camera camera in cameras)
-            {
-                camera.gameObject.SetActive(false);
-            }
+            //foreach (Camera camera in cameras)
+            //{
+            //    camera.gameObject.SetActive(false);
+            //}
         }
         
     }

@@ -202,6 +202,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3993381528381502257}
+  - component: {fileID: 6197506122646033704}
   m_Layer: 8
   m_Name: LeftHandAnchor
   m_TagString: Untagged
@@ -225,6 +226,22 @@ Transform:
   m_Father: {fileID: 3993381528381516709}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6197506122646033704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3993381528381932191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6a87b3677c3f9a4e884478024d722ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_recording: 0
+  m_hand: Left Hand
+  m_threshold: 0.05
+  m_gestures: []
 --- !u!1 &3993381528381936651
 GameObject:
   m_ObjectHideFlags: 0
@@ -234,6 +251,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3993381528381490997}
+  - component: {fileID: 5133459914191904631}
   m_Layer: 8
   m_Name: RightHandAnchor
   m_TagString: Untagged
@@ -257,6 +275,22 @@ Transform:
   m_Father: {fileID: 3993381528381516709}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5133459914191904631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3993381528381936651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6a87b3677c3f9a4e884478024d722ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_recording: 0
+  m_hand: Right Hand
+  m_threshold: 0.05
+  m_gestures: []
 --- !u!1 &3993381528381943489
 GameObject:
   m_ObjectHideFlags: 0
@@ -664,10 +698,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e0821d118aa8754f8033dd914fba2f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  componentsToDisable:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!1 &3993668698125129499
 GameObject:
   m_ObjectHideFlags: 0
@@ -1115,7 +1145,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 463470, guid: 84c8b8609f9bb434eaf5248f17ff1293, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.619
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 463470, guid: 84c8b8609f9bb434eaf5248f17ff1293, type: 3}
       propertyPath: m_LocalRotation.x
