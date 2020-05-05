@@ -9,6 +9,7 @@ public class ConnectionHandler : MonoBehaviourPunCallbacks
 {
 
     public GameObject VRRig;
+    public float charactersOffset = 2f;
     
     void Awake()
     {
@@ -55,7 +56,8 @@ public class ConnectionHandler : MonoBehaviourPunCallbacks
 
         if (scene.name == "Multiplayer")
         {
-            PhotonNetwork.Instantiate(VRRig.name, new Vector3(0,1.7f,0), Quaternion.identity);
+            var numPlayers = PhotonNetwork.CurrentRoom.PlayerCount;
+            PhotonNetwork.Instantiate(VRRig.name, new Vector3(0,1.7f,numPlayers * charactersOffset), Quaternion.identity);
         }
         
     }
