@@ -3,11 +3,18 @@ using System.Collections;
 using System.Collections.Generic;
 using System;
 using Oculus.Avatar;
+using Photon.Pun;
 
 public class OvrAvatarHand : OvrAvatarComponent
 {
     public bool isLeftHand = true;
     ovrAvatarHandComponent component = new ovrAvatarHandComponent();
+
+    void Awake()
+    {
+        gameObject.AddComponent<PhotonView>();
+        PhotonTransformView view = gameObject.AddComponent<PhotonTransformView>();
+    }
 
     void Update()
     {
@@ -35,7 +42,6 @@ public class OvrAvatarHand : OvrAvatarComponent
             if (isLeftHand)
             {
                 owner.HandLeft = null;
-
             }
             else
             {

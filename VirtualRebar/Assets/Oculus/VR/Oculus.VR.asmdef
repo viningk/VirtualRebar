@@ -1,10 +1,16 @@
 {
     "name": "Oculus.VR",
-    "references": [],
-    "optionalUnityReferences": [],
+    "references": [
+        "GUID:57c32fc907df0f54e8e6e8f0d2488336",
+        "GUID:831409e8f9d13b5479a3baef9822ad34"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
     "versionDefines": [
         {
             "name": "com.unity.xr.management",
@@ -16,5 +22,6 @@
             "expression": "",
             "define": "USING_XR_SDK_OCULUS"
         }
-    ]
+    ],
+    "noEngineReferences": false
 }
