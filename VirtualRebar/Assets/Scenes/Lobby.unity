@@ -2741,6 +2741,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   VRRig: {fileID: 3993381528381943495, guid: 320f3f75ba212404cbb0be465036781e, type: 3}
+  charactersOffset: 2
 --- !u!1 &1742637127
 GameObject:
   m_ObjectHideFlags: 0

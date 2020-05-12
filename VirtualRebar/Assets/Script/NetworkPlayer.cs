@@ -25,24 +25,23 @@ public class NetworkPlayer : MonoBehaviour
         }
         else
         {
-            OVRCameraRig cameraRig = GetComponentInChildren<OVRCameraRig>();
-            cameraRig.enabled = false;
-            
-            OVRHeadsetEmulator headsetEmulator = GetComponentInChildren<OVRHeadsetEmulator>();
-            headsetEmulator.enabled = false;
-            
-            OvrAvatar avatar = GetComponentInChildren<OvrAvatar>();
-            avatar.enabled = false;
-            
-            OvrAvatarLocalDriver driver = GetComponentInChildren<OvrAvatarLocalDriver>();
-            driver.enabled = false;
-            
+            /* OVRCameraRig cameraRig = GetComponentInChildren<OVRCameraRig>();
+             cameraRig.enabled = false;
+             
+             OVRHeadsetEmulator headsetEmulator = GetComponentInChildren<OVRHeadsetEmulator>();
+             headsetEmulator.enabled = false;
+             
+             OvrAvatar avatar = GetComponentInChildren<OvrAvatar>();
+             avatar.enabled = false;
+             
+             OvrAvatarLocalDriver driver = GetComponentInChildren<OvrAvatarLocalDriver>();
+             driver.enabled = false;
+             */
             Camera[] cameras = GetComponentsInChildren<Camera>();
-            foreach (Camera camera in cameras) 
+            foreach (Camera camera in cameras)
             {
                 camera.enabled = false;
             }
-
         }
     }
 
