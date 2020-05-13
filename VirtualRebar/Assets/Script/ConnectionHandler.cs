@@ -38,6 +38,7 @@ public class ConnectionHandler : MonoBehaviourPunCallbacks
     public override void OnConnectedToMaster()
     {
         Debug.Log("Connected");
+        Debug.Log("Am I the master: " + PhotonNetwork.IsMasterClient);
 
         RoomOptions options = new RoomOptions();
         options.MaxPlayers = 10;

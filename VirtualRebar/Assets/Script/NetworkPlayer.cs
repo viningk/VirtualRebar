@@ -3,10 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using Photon.Pun;
 using UnityEngine;
+using UnityEngine.SpatialTracking;
 
 public class NetworkPlayer : MonoBehaviour
 {
-    [SerializeField] Behaviour[] componentsToDisable;
+    [SerializeField]
+    Behaviour[] componentsToDisable;
 
 
     private PhotonView view;
@@ -19,29 +21,17 @@ public class NetworkPlayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("Is mine: " + view.IsMine);
         if (view.IsMine)
         {
         }
         else
         {
-            /* OVRCameraRig cameraRig = GetComponentInChildren<OVRCameraRig>();
-             cameraRig.enabled = false;
-             
-             OVRHeadsetEmulator headsetEmulator = GetComponentInChildren<OVRHeadsetEmulator>();
-             headsetEmulator.enabled = false;
-             
-             OvrAvatar avatar = GetComponentInChildren<OvrAvatar>();
-             avatar.enabled = false;
-             
-             OvrAvatarLocalDriver driver = GetComponentInChildren<OvrAvatarLocalDriver>();
-             driver.enabled = false;
-             */
-            Camera[] cameras = GetComponentsInChildren<Camera>();
-            foreach (Camera camera in cameras)
+
+            foreach (Behaviour component in componentsToDisable)
             {
-                camera.enabled = false;
+                component.enabled = false;
             }
+
         }
     }
 
