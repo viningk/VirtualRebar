@@ -228,6 +228,8 @@ MonoBehaviour:
   - {fileID: 2745063334370088169}
   - {fileID: 2745063334939716669}
   - {fileID: 2745063336199067309}
+  - {fileID: 314321255505781056}
+  quad: {fileID: 403136854951293672}
 --- !u!114 &6314356990560164416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -555,6 +557,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdb9db596df9a574b90882279a6fb4a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!23 &403136854951293672 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 23584743466246736, guid: dadbda9315d15264f9ba1364afbca3fc,
+    type: 3}
+  m_PrefabInstance: {fileID: 417692262895571128}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7406295111687291056
 PrefabInstance:
   m_ObjectHideFlags: 0
