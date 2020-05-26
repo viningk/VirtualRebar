@@ -10,7 +10,7 @@ public class NetworkPlayer : MonoBehaviour
     [SerializeField]
     Behaviour[] componentsToDisable;
 
-
+    public MeshRenderer quad;
     private PhotonView view;
 
     private void Awake()
@@ -26,7 +26,7 @@ public class NetworkPlayer : MonoBehaviour
         }
         else
         {
-
+            quad.enabled = false;
             foreach (Behaviour component in componentsToDisable)
             {
                 component.enabled = false;
