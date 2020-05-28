@@ -113,6 +113,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2745063334939716668}
   - component: {fileID: 2745063334939716669}
+  - component: {fileID: 7133325444750542331}
   m_Layer: 0
   m_Name: Head
   m_TagString: Untagged
@@ -178,6 +179,14 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!81 &7133325444750542331
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2745063334939716643}
+  m_Enabled: 1
 --- !u!1 &2745063335228853897
 GameObject:
   m_ObjectHideFlags: 0
@@ -232,6 +241,7 @@ MonoBehaviour:
   - {fileID: 2745063336199067309}
   - {fileID: 314321255505781056}
   quad: {fileID: 403136854951293672}
+  listener: {fileID: 7133325444750542331}
 --- !u!114 &6314356990560164416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -446,7 +456,7 @@ AudioSource:
   MinDistance: 1
   MaxDistance: 500
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0

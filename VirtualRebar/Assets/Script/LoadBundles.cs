@@ -18,7 +18,7 @@ public class LoadBundles : MonoBehaviour
         string url = "https://streamlinedocs.blob.core.windows.net/virtualrebar/ParadiseRebar/pumpback";
         UnityWebRequest request = UnityWebRequestAssetBundle.GetAssetBundle(url, 0);
 
-        loadingParent.gameObject.SetActive(true);
+        //loadingParent.gameObject.SetActive(true);
 
         yield return request.Send();
         
@@ -26,7 +26,7 @@ public class LoadBundles : MonoBehaviour
         GameObject prefab = bundle.LoadAsset<GameObject>("assets/assetbundles/model.prefab");
         Instantiate(prefab);
 
-        loadingParent.gameObject.SetActive(false);
+        //loadingParent.gameObject.SetActive(false);
 
     }
 }

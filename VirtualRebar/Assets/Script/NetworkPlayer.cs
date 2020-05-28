@@ -2,6 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using Photon.Pun;
+using Photon.Voice.PUN;
+using Photon.Voice.Unity;
 using UnityEngine;
 using UnityEngine.SpatialTracking;
 
@@ -11,6 +13,7 @@ public class NetworkPlayer : MonoBehaviour
     Behaviour[] componentsToDisable;
 
     public MeshRenderer quad;
+    public AudioListener listener;
     private PhotonView view;
 
     private void Awake()
@@ -23,10 +26,14 @@ public class NetworkPlayer : MonoBehaviour
     {
         if (view.IsMine)
         {
+            PhotonVoiceNetwork.Instance.PrimaryRecorder = FindObjectOfType<Recorder>();
+            PhotonVoiceNetwork.Instance.InitRecorder(PhotonVoiceNetwork.Instance.PrimaryRecorder);
         }
         else
         {
             quad.enabled = false;
+            listener.enabled = false;
+
             foreach (Behaviour component in componentsToDisable)
             {
                 component.enabled = false;

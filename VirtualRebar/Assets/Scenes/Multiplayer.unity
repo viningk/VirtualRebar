@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 251151235}
   - component: {fileID: 251151238}
   - component: {fileID: 251151237}
+  - component: {fileID: 251151239}
   m_Layer: 0
   m_Name: VoiceControl
   m_TagString: Untagged
@@ -156,7 +157,7 @@ MonoBehaviour:
   voiceDetection: 1
   voiceDetectionThreshold: 0.01
   voiceDetectionDelayMs: 500
-  unityMicrophoneDevice: Microphone (3- USB Audio Device)
+  unityMicrophoneDevice: Microphone (3- Realtek(R) Audio)
   photonMicrophoneDeviceId: 0
   interestGroup: 0
   debugEchoMode: 0
@@ -229,6 +230,21 @@ MonoBehaviour:
   viewIdField: 1
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!114 &251151239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 251151234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3986deb98168394684c41606a9495af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  logLevel: 1
+  boostValue: 0
+  amplificationFactor: 10
 --- !u!1 &594388105
 GameObject:
   m_ObjectHideFlags: 0
@@ -619,6 +635,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3b97dec00057f84d853bfe34705743b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  loadingParent: {fileID: 0}
 --- !u!4 &1916735448
 Transform:
   m_ObjectHideFlags: 0
