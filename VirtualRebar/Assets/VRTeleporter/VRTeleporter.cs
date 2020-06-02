@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -40,7 +40,7 @@ public class VRTeleporter : MonoBehaviour
     {
         if (groundDetected)
         {
-            bodyTransforn.position = groundPos + lastNormal * 0.1f;
+            bodyTransforn.position = groundPos + lastNormal/* * 0.1f*/;
         }
         else
         {
