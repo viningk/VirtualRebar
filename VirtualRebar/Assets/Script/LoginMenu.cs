@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 using DatabaseControl; // << Remember to add this reference to your scripts which use DatabaseControl
@@ -47,6 +47,9 @@ public class LoginMenu : MonoBehaviour
         //Get the username and password the player entered
         playerUsername = Login_UsernameField.text;
         playerPassword = Login_PasswordField.text;
+
+
+        NetworkPlayer.loginName = playerUsername;
 
         //Check the lengths of the username and password. (If they are wrong, we might as well show an error now instead of waiting for the request to the server)
         if (playerUsername.Length > 3)
